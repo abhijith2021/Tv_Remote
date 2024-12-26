@@ -1,0 +1,16 @@
+1.)power button
+functions:
+ when pressed on should show a welcome message in the label
+	when pressed off should show signing off
+2.)reset button
+function:
+should clear all the numbers enetered and show ---
+3.)numbers from 0 to 9 buttons
+function: when entered and pressed submit should go to respective channel
+note:: maximum limit 3 digit upto 999 and should not go to directly the first entered number
+4.)channel up channel down button
+function :
+should move to the channel on each press
+5.)volume up and volume down button
+6.)playback button
+7.)settings button
