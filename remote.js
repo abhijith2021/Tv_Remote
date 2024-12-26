@@ -1,5 +1,6 @@
 let count = 0;
 function clicked(){
+    
     count+=1;
     // console.log(count);
 if(count % 2 ==0 ){
@@ -9,6 +10,8 @@ if(count % 2 ==0 ){
 else{
     document.getElementById("input1").value = "on"
 }
+
+// POWER ON OFF FUNCTION FOR THE REMOTE
 
 };
 
@@ -20,32 +23,43 @@ function volume(){
 }
 function volumedown(){
     volumeup -= 1;
-    console.log(volumeup);
+    // console.log(volumeup);
     document.getElementById("input1").value = "volume is: " + volumeup;
+    while(volumeup == 10){
+        break;
+    }
 }
 
-function clear(){
-    document.getElementById("input1").value = '';
+// VOLUME UP AND DOWN FUNCTIPON FOR THE REMOTE
+
+
+
+let channelCount = 0;
+function channelUp(){
+    channelCount += 1;
+    document.getElementById('input1').value = "channel number is: " + channelCount;
+}
+function channelDown(){
+    channelCount -= 1;
+    document.getElementById('input1').value = "the channel number is:" + channelCount;
+
 }
 
-function zero(){
-    document.getElementById("input1").value = 0;
-}
-function one(){
-    document.getElementById("input1").value = 1;
-}function two(){
-    document.getElementById("input1").value = 2;
-}
-function three(){
-    document.getElementById("input1").value = 3;
-}
-function four(){
-    document.getElementById("input1").value = 4;
-}
-function five(){
-    document.getElementById("input1").value = 5;
+// CHANNEL UP AND DOWN FUNCTION FOR THE REMOTE
+function InputDigit(digit){
+    const Newdigit = document.getElementById('input1');
+
+    if(Newdigit.value.length < 3){
+        
+        Newdigit.value += digit; 
+    }
 }
 
+// SETTING ENTRY LIMIT FOR THE INPUT FIELD TO 3 DIGITS
+
+function clearForm(){
+    document.getElementById("input1").value = ' ';
+}
 
 
 

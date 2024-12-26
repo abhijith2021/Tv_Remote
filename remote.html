@@ -8,24 +8,24 @@
     <script src="remote.js"></script>
 </head>
 <body>
-    <div>
+    <div id="div1">
         <input type="text" name="" id="input1" pattern="[0-9]{3}"><br><br><br>
         <p id="input"></p>
         <!-- <label for="" class="input1"></label> -->
         <button id="power" onclick="clicked()">Power</button><br>
-        <button  id="reset" onclick="clear()">Reset</button><br>
-        <button c0lass="0" onclick="zero()">0</button>
-        <button class="1" onclick="one()">1</button>
-        <button class="2" onclick="two()">2</button><br>
-        <button class="3" onclick="three()">3</button>
-        <button class="4" onclick="four()">4</button>
-        <button class="5" onclick="five()">5</button><br>
-        <button class="6" onclick="six()">6</button>
-        <button class="7" onclick="seven()">7</button>
-        <button class="8" onclick="eight()">8</button><br>
-        <button class="9" onclick="ten()">9</button><br>
-        <button class="cup">channel up</button>
-        <button class="cdown">channel down</button><br>
+        <button id="reset" onclick="clearForm()">Reset</button><br>
+        <button c0lass="0" onclick="InputDigit(0)">0</button>
+        <button class="1" onclick="InputDigit(1)">1</button>
+        <button class="2" onclick="InputDigit(2)">2</button><br>
+        <button class="3" onclick="InputDigit(3)">3</button>
+        <button class="4" onclick="InputDigit(4)">4</button>
+        <button class="5" onclick="InputDigit(5)">5</button><br>
+        <button class="6" onclick="InputDigit(6)">6</button>
+        <button class="7" onclick="InputDigit(7)">7</button>
+        <button class="8" onclick="InputDigit(8)">8</button><br>
+        <button class="9" onclick="InputDigit(9)">9</button><br>
+        <button class="cup" onclick="channelUp()">channel up</button>
+        <button class="cdown" onclick="channelDown()">channel down</button><br>
         <button id="vup" onclick="volume()">volume up</button>
         <button id="vdown" onclick="volumedown()">volume down</button><br>
         <button class="sett">settings</button>
