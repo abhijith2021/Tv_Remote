@@ -54,6 +54,18 @@ function InputDigit(digit){
         Newdigit.value += digit; 
     }
 }
+function manual(number){
+    const val = document.getElementById('input1');
+    if(val.value.length < 1000)
+        {
+            const newVal = parseFloat(val.value) || 0;
+            val.value += newVal + number;
+
+        }
+        
+
+    
+}
 
 // SETTING ENTRY LIMIT FOR THE INPUT FIELD TO 3 DIGITS
 
