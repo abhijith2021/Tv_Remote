@@ -34,6 +34,17 @@ function volumedown(){
 
 
 
+
+
+// CHANNEL UP AND DOWN FUNCTION FOR THE REMOTE
+function InputDigit(digit){
+    const Newdigit = document.getElementById('input1');
+
+    if(Newdigit.value.length < 3){
+        
+        Newdigit.value += digit; 
+    }
+}
 let channelCount = 0;
 function channelUp(){
     channelCount += 1;
@@ -45,33 +56,28 @@ function channelDown(){
 
 }
 
-// CHANNEL UP AND DOWN FUNCTION FOR THE REMOTE
-function InputDigit(digit){
-    const Newdigit = document.getElementById('input1');
 
-    if(Newdigit.value.length < 3){
-        
-        Newdigit.value += digit; 
-    }
-}
-function manual(number){
-    const val = document.getElementById('input1');
-    if(val.value.length < 1000)
-        {
-            const newVal = parseFloat(val.value) || 0;
-            val.value += newVal + number;
+// function manual(number){
+//     const val = document.getElementById('input1');
+//     if(val.value.length < 1000)
+//         {
+//             const newVal = parseFloat(val.value) || 0;
+//             val.value += newVal + number;
 
-        }
+//         }
         
 
     
-}
+// }
 
 // SETTING ENTRY LIMIT FOR THE INPUT FIELD TO 3 DIGITS
 
 function clearForm(){
     document.getElementById("input1").value = ' ';
 }
+
+
+
 
 
 
